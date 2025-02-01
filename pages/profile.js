@@ -18,7 +18,7 @@ export default function Profile() {
         <div className={styles.profileSection}>
           <div className={styles.profileCard}>
             <div className={styles.profileImage}>
-              <img src="user.jpg" alt="Profile" />
+              <img src="/user.jpg" alt="Profile" />
             </div>
             <h2>John Doe</h2>
             <p>Software Engineer</p>
