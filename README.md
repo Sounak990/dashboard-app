@@ -52,8 +52,7 @@ This is a **modern, responsive, and aesthetic dashboard application** built usin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/nextjs-dashboard.git
-   nextjs-dashboard/
+   git clone https://github.com/Sounak990/dashboard-app
 
 Folder Structure
 ├── components/              # Reusable components (e.g., Navbar, Charts)
