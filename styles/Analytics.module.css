@@ -1,0 +1,79 @@
+/* Global Styles */
+.container {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Gradient Background */
+.gradientBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  z-index: -2;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 40px;
+  margin-left: 250px; /* Adjust based on Navbar width */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent overlay */
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff; /* White text for better contrast */
+  margin-bottom: 20px;
+}
+
+/* Charts Section */
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Chart Card */
+.chartCard {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chartCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.chartCard h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}
